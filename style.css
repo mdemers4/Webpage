@@ -1,0 +1,94 @@
+
+
+
+
+
+body {
+	/* background-image: url('img/bg.JPG'); */
+	color: #000305;
+	font-size: 85.7%; /* Base font size is 14px */
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+/* styling the links */
+a{
+	text-decoration: none; /* Takes off underlining of the links */
+}
+
+a:link, a:visited {
+
+}
+
+a:hover, a:active{
+
+}
+
+/* At this point go back to your index.html and look for all the classes to start at */
+
+.body {
+	margin: 0 auto; 
+	width:70%;
+	clear:both;
+}
+
+.mainHeader img{
+	width:30%;
+	height: auto;
+	margin: 2% 0;
+}
+
+.mainHeader nav { /* creates the dart bot at the for where the links go*/ 
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainHeader nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+	float: left;
+	display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+	
+}
+
+/* This activates the home page as active and assigns it a different colour  */
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+	background-color: #CF5C3F;
+	text-shadow: none;
+}
+
+.mainHeader nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* Now we move to the mainContent class to style */
+
+.mainContent{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+/* */
+
+
+
+
+
