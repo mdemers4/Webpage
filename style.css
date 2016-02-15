@@ -17,10 +17,12 @@ a{
 }
 
 a:link, a:visited {
-
+	color: #CF5C3F;
 }
 
 a:hover, a:active{
+	background-color: #CF5C3F;
+	color: #FFF;
 
 }
 
@@ -34,7 +36,7 @@ a:hover, a:active{
 
 .mainHeader img{
 	width:30%;
-	height: auto;
+	height: 150px; /* CHANGE THIS TO AUTO WHEN YOU HAVE THE PICTURE */
 	margin: 2% 0;
 }
 
@@ -80,10 +82,160 @@ a:hover, a:active{
 /* Now we move to the mainContent class to style */
 
 .mainContent{
+	line-height:25px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	/* overflow: hidden; */
 }
+
+.content{
+	width: 70%; /* you want 70% bec you have sidebars that go on the right side */
+	float: left;
+}
+
+
+.topcontent{
+	background-color: lightblue;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 2%;
+}
+
+.bottomcontent{
+	background-color: lightblue;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-top: 2%;
+}
+
+.post-info{
+	/* This is for the text underneath the top and bottom main content Doesnt work*/
+	font-style: italic;
+	color: #999;
+	font-size: 90%;
+}
+
+.top-sidebar {
+	width: 21%;
+	float: left;
+	background-color: Red;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 1.5% 0 1.5% 3%; /* this moves clockwise starting from the top*/
+	padding: 2% 3%;
+}
+
+.middle-sidebar {
+	width: 21%;
+	float: left;
+	background-color: Red;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+	
+}
+.bottom-sidebar {
+	width: 21%;
+	float: left;
+	background-color: Red;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.mainFooter {
+	width: 100%;
+	float: left;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #666;
+	margin: 2% 0; /* if only two percents are called it pools top bottom as the first and left right as the second */
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+
+	.body {
+		width: 90%; /* when copying your stuff into this its bad practice to have all the variables so delete the 
+		margin and clear everything you want to keep the same, delete it from here*/
+		font-size: 95%;
+	}
+
+	.mainHeader img{
+		width:100%;
+	}
+
+	.mainHeader nav { /* creates the dart bot at the for where the links go*/ 
+		height: 160px;
+	}
+
+	.mainHeader nav ul {
+		padding-left: 0;
+	}
+
+	.mainHeader nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.mainHeader nav a:link, .mainHeader nav a:visited {
+		padding: 10px 25px;
+		height: 20px;
+		display: block;
+		
+	}
+
+
+	.content{
+		width: 100%; /* you want 100% bec no more sidebars */
+		float: left;
+		margin-top:2%;
+	}
+	
+	.post-info{
+		display: none;
+	}
+
+	.topcontent{
+		margin-top: 3%;
+	}
+
+	.bottomcontent{
+		margin-top: 3%;
+	}
+
+	.top-sidebar, .middle-sidebar, .bottom-sidebar {
+		width: 95%;
+		margin-top:3%;
+		margin-left: 0%;
+	}
+
+}
+
+
+
+
+
 
 
 /* */
