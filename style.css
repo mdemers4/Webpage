@@ -35,8 +35,8 @@ a:hover, a:active{
 }
 
 .mainHeader img{
-	width:30%;
-	height: 150px; /* CHANGE THIS TO AUTO WHEN YOU HAVE THE PICTURE */
+	width: 30%;
+	height: auto; /* CHANGE THIS TO AUTO WHEN YOU HAVE THE PICTURE */
 	margin: 2% 0;
 }
 
@@ -172,11 +172,11 @@ a:hover, a:active{
 	}
 
 	.mainHeader img{
-		width:100%;
+		width:60%;
 	}
 
 	.mainHeader nav { /* creates the dart bot at the for where the links go*/ 
-		height: 160px;
+		height: 200px;
 	}
 
 	.mainHeader nav ul {
